@@ -8,21 +8,38 @@ body{
     "navbar navbar"
     "sidebar main"
     "sidebar footer";
+    color: white;
 }
 nav{
     top: 0;
     position: sticky;
     grid-area: navbar;
     padding: 1em;
-    background-color: red;
+    background-color: #86171b;
 }
 aside{
+    display: grid;
+    grid-template-rows: auto;
     top: 50.5px;
     height: calc(100vh - 50.5px);
     position: sticky;
     align-self: start;
     grid-area: sidebar;
-    background-color: blue;
+    background-color: #A41D21;
+}
+.item{
+    display: flex;
+    align-items: center;
+    padding-left: 5%;
+}
+.item a{
+    color: white;
+    text-decoration: none;
+    font-size: 2em;
+    font-family: "Inter", sans-serif;
+}
+.item:hover{
+    background-color: #86171b;
 }
 main{
     grid-area: main;
@@ -41,6 +58,6 @@ footer{
         display: none;
     }
     .show{
-        display: block;
+        display: grid;
     }
 }
